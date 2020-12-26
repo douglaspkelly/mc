@@ -1,4 +1,5 @@
 let packs = [];
+
 function init() {
     fetch('data.json')
         .then(response => {
@@ -11,8 +12,7 @@ function init() {
             packs = json;
             initPacks();
         })
-        .catch(function () {
-        });
+        .catch(function() {});
 }
 
 function initPacks() {
@@ -25,10 +25,11 @@ function initPacks() {
 
 function htmlForPack(pack) {
     let h = '<div class=packDiv onclick=setActivePack("' + pack.id + '")>';
-    h += '<h3 class=packName>' + pack.name + '</h3>'
-        + '<img class=packImg src=' + pack.img + '><br>'
-        + '<span class=packDescription>' + pack.description + '<br>'
-        + '</div>';
+    h += '<h3 class=packName>' + pack.name + '</h3>' +
+        '<div class=packImg>' +
+        '<img class=packImg src=packs/' + pack.directory + "/" + pack.thumbnail + '><br>' +
+        '</div>' +
+        '</div>';
     return h;
 }
 
@@ -45,7 +46,8 @@ function setActivePack(id) {
     let pack = getPackById(id);
     if (pack !== null) {
         g('right').style.display = '';
-        g('downloadForm').action = pack.filename;
+        g('packBigThumbnail').src = "packs/" + pack.directory + "/" + pack.bigThumbnail;
+        g('downloadForm').action = "packs/" + pack.directory + "/" + pack.filename;
     }
 }
 

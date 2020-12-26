@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    color: #eee;
+}
+
+h3.packName {
+    margin: 0px;
+}
+
+div.packDiv {
+    padding: 20px;
+}
+
+div#packDownloadArea {
+    padding: 40px;
+    vertical-align: top;
+    text-align: center;
+}
+
+div.packDiv:hover {
+    background-color: #333;
+}
+
+div#left {
+    display: inline-block;
+    vertical-align: top;
+}
+
+div#right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+div.packImg {
+    text-align: center;
+}
+
+div.packDiv {
+    display: inline-block;
+    max-width: 256px;
+}
+
+img.packImg {
+    max-width: 64px;
+    max-height: 64px;
+    image-rendering: crisp-edges;
+    min-height: 64px;
+}
+
+img#packBigThumbnail {
+    max-width: 128px;
+    max-height: 128px;
+    image-rendering: crisp-edges;
+    min-height: 128px;
+}
