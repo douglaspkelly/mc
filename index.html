@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head><script src=texturePacks.js></script></head><body onload=init()>
-        <div id=left></div>
-        <div id=right style='display:none;'><form id=downloadForm method="get" action="">
-            <button class=download type="submit">Download!</button>
-         </form></div>
-    </body>
+
+<head>
+    <script src=texturePacks.js></script>
+    <link rel="stylesheet" type="text/css" href="mc.css" />
+</head>
+
+<body onload=init()>
+    <div id=left></div>
+    <div id=right style='display:none;'>
+        <div id=packDownloadArea>
+            <form id=downloadForm method="get" action="">
+                <button class=download type="submit">Download!</button>
+            </form>
+        </div>
+    </div>
+</body>
+
 </html>

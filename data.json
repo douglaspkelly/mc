@@ -1,6 +1,16 @@
-{
-    "id": 1,
-    "name": "Bob",
-    "img": "bob.png",
-    "description": "asdfasdfasdf"
-}
+[
+    {
+        "id": 1,
+        "name": "Bob",
+        "img": "bob.png",
+        "description": "asdfasdfasdf",
+        "filename": "bob.pack"
+    },
+    {
+        "id": 2,
+        "name": "Bill",
+        "img": "bill.png",
+        "description": "asdfasdfasdf",
+        "filename": "bill.pack"
+    }
+]
