@@ -4,6 +4,7 @@
         "name": "Shorter swords",
         "directory": "shorter_swords",
         "thumbnail": "thumbnail.png",
-        "filename": "Shorter Swords.zip"
+        "filename": "Shorter Swords.zip",
+        "bigThumbnail":"bigthumbnail.png"
     }
 ] 
